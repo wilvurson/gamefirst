@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Aubrey&family=Bebas+Neue&family=Hanuman:wght@100;300;400;700;900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jomhuria&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: "Jomhuria", serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #AFE57F;
+}
+
+.main_box {
+    display: flex;
+    flex-direction: column;
+    margin: 5px 20px;
+    height: 1000px;
+}
+
+.game_name_box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100px;
+    font-size: 50px;
+}
+
+.score_box {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 100px;
+    font-size: 100px;
+}
+
+.game_board {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+
+.lines {
+    display: flex;
+    flex-direction: row;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    width: 100%;
+    gap: 100px;
+    max-width: 1000px;
+    background-color: transparent;
+}
+
+.hole {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    height: 56.5px;
+    width: 200px;
+    background-image: url("./images/holes.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.start_timer {
+    display: flex;
+    flex-direction: row;
+    margin-top: 100px;
+    justify-content: center;
+    gap: 100px
+}
+
+.start_box {
+    height: 90px;
+    width: 200px;
+    border-radius: 30px;
+    background-color: #022D11;
+    font-size: 100px;
+    color: white;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+.timer_box {
+    display: flex;
+    width: 400px;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: space-around;
+}
+
+.time_bar {
+    height: 30px;
+    border-radius: 20px;
+    background-color: rgba(29, 50, 8, 0.4);
+}
+
+.timer_bar {
+    height: 30px;
+    width: 30px;
+    border-radius: 20px;
+    background-color: rgba(29, 50, 8, 1);
+}
+
+.time_box {
+    display: flex;
+    justify-content: space-between;
+    font-size: 50px;
+}
