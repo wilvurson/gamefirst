@@ -7,15 +7,17 @@
 }
 
 body {
-    min-height: 100vh;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
     align-items: center;
     justify-content: center;
     font-family: "Jomhuria", serif;
     font-weight: 400;
     font-style: normal;
     background-color: #AFE57F;
+    cursor: url("./images/cursor_three.png") 64 64, auto;
 }
 
 .main_box {
@@ -45,28 +47,20 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    width: 100%;
-}
-
-.lines {
-    display: flex;
-    flex-direction: row;
-    margin-top: 100px;
-    margin-bottom: 100px;
-    width: 100%;
-    gap: 100px;
-    max-width: 1000px;
-    background-color: transparent;
+    height: 700px;
+    width: 700px;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 20px;
 }
 
 .hole {
     display: flex;
-    justify-content: center;
-    flex-direction: row;
     height: 56.5px;
     width: 200px;
     background-image: url("./images/holes.png");
     background-size: cover;
+    background-repeat: no-repeat;
     background-position: center;
 }
 
@@ -114,4 +108,14 @@ body {
     display: flex;
     justify-content: space-between;
     font-size: 50px;
+}
+
+.mole {
+    background-image: url("./images/mole.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100px;
+    width: 100px;
+    position: relative;
 }
