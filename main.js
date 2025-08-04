@@ -12,7 +12,6 @@ const timerBar = document.querySelector('.timer_bar');
 const timerStart = document.querySelector('.time_box .number:first-child');
 const moles = [];
 
-// Step 1: Create mole elements and attach click events
 holes.forEach((hole, i) => {
     const mole = document.createElement('div');
     mole.className = 'mole';
@@ -36,7 +35,6 @@ holes.forEach((hole, i) => {
     });
 });
 
-// Step 2: Show a random mole
 function showRandomMole() {
     if (!gameRunning || currentMole !== null) return;
 
@@ -48,7 +46,6 @@ function showRandomMole() {
     mole.style.display = 'block';
 }
 
-// Step 3: Start game when button is clicked
 function startGame() {
     if (gameRunning) return;
 
