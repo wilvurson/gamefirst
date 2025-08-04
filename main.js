@@ -77,9 +77,16 @@ function stopGame() {
     moles.forEach(mole => mole.style.display = 'none');
     currentMole = null;
     gameRunning = false;
-    timerBar.style.width = `100%`;
+    timerBar.style.width = '100%';
     timerStart.textContent = 0;
+    finalScore.textContent = score;
+    gameOverBoard.classList.remove('hidden');
 }
 
 startButton.addEventListener('click', startGame);
+
+restartButton.addEventListener('click', () => {
+    gameOverBoard.classList.add('hidden');
+    startGame();
+});
 
