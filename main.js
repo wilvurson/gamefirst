@@ -90,3 +90,59 @@ restartButton.addEventListener('click', () => {
     startGame();
 });
 
+// document.getElementById("file").addEventListener("change", (event) => {
+//     const errorText = document.getElementById("error")
+//     const img = document.getElementById("preview");
+    
+//     img.src = "";
+//     errorText.textContent = "";
+
+//     const file = event.target.files[0]
+//     const maxSize = 1024 * 1024 * 2
+//     const imageTypes = ["image/jpg", "image/png", "image/pdf"]
+    
+//     console.log("type", file.type);
+//     console.log("size", file.size);
+
+//     if (file.size > maxSize) {
+//         errorText.textContent = "The file is too big";
+//         return;
+//     }
+    
+//     if (!imageTypes.includes(file.type)) {
+        
+//         alert("Upload picture");
+//         return;
+//     }
+    
+//     const reader = new FileReader();
+//     reader.onload = (event) => {
+        
+        
+//         img.src = event.target.result;
+
+//     };
+
+//     reader.readAsDataURL(event.target.files[0]);
+
+// });
+
+// document.getElementById("file_input").addEventListener("change", (event) => {
+//   const file = event.target.files[0]
+
+//     if (!file) {
+//     alert("Upload picture");
+//     return;
+//   }
+
+//   const reader = new FileReader();
+//   reader.onload = (event) => {
+//     const text = document.getElementById("text");
+
+//     text.textContent = event.target.result;
+//   };
+
+//   reader.readAsText(event.target.files[0]);
+// });
+
+
