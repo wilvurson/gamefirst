@@ -91,18 +91,20 @@ restartButton.addEventListener('click', () => {
 });
 
 // document.getElementById("file").addEventListener("change", (event) => {
-//     const errorText = document.getElementById("error")
+//     const errorText = document.getElementById("error");
 //     const img = document.getElementById("preview");
-    
+//     const textElement = document.getElementById("text");
+
+
 //     img.src = "";
 //     errorText.textContent = "";
+//     textElement.textContent = "";
 
-//     const file = event.target.files[0]
-//     const maxSize = 1024 * 1024 * 2
-//     const imageTypes = ["image/jpg", "image/png", "image/pdf"]
-    
-//     console.log("type", file.type);
-//     console.log("size", file.size);
+//     const file = event.target.files[0];
+//     const maxSize = 1024 * 1024 * 2;
+//     const imageTypes = ["image/jpeg", "image/png"];
+
+//     if (!file) return;
 
 //     if (file.size > maxSize) {
 //         errorText.textContent = "The file is too big";
@@ -110,39 +112,42 @@ restartButton.addEventListener('click', () => {
 //     }
     
 //     if (!imageTypes.includes(file.type)) {
-        
-//         alert("Upload picture");
+//         alert("Please upload a JPG or PNG image");
 //         return;
 //     }
     
 //     const reader = new FileReader();
-//     reader.onload = (event) => {
-        
-        
-//         img.src = event.target.result;
-
+//     reader.onload = (e) => {
+//         img.src = e.target.result;
 //     };
 
-//     reader.readAsDataURL(event.target.files[0]);
-
+//     reader.readAsDataURL(file);
 // });
 
 // document.getElementById("file_input").addEventListener("change", (event) => {
-//   const file = event.target.files[0]
+//     const textElement = document.getElementById("text");
+//     const img = document.getElementById("preview");
+//     const errorText = document.getElementById("error");
 
+
+//     textElement.textContent = "";
+//     img.src = "";
+//     errorText.textContent = "";
+
+//     const file = event.target.files[0];
 //     if (!file) {
-//     alert("Upload picture");
-//     return;
-//   }
+//         alert("Please upload a text file");
+//         return;
+//     }
 
-//   const reader = new FileReader();
-//   reader.onload = (event) => {
-//     const text = document.getElementById("text");
+//     const reader = new FileReader();
+//     reader.onload = (e) => {
+//         textElement.textContent = e.target.result;
+//     };
 
-//     text.textContent = event.target.result;
-//   };
-
-//   reader.readAsText(event.target.files[0]);
+//     reader.readAsText(file);
 // });
+
+
 
 
