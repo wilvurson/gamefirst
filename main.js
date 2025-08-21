@@ -10,6 +10,7 @@ const scoreDisplay = document.querySelector('.score_num');
 const startButton = document.querySelector('.start_box');
 const timerBar = document.querySelector('.timer_bar');
 const timerStart = document.querySelector('.time_box .number:first-child');
+const restartButton = document.querySelector('.restart_button')
 const moles = [];
 
 holes.forEach((hole, i) => {
@@ -86,68 +87,6 @@ function stopGame() {
 startButton.addEventListener('click', startGame);
 
 restartButton.addEventListener('click', () => {
-    gameOverBoard.classList.add('hidden');
+    game_over_board.classList.add('hidden');
     startGame();
 });
-
-// document.getElementById("file").addEventListener("change", (event) => {
-//     const errorText = document.getElementById("error");
-//     const img = document.getElementById("preview");
-//     const textElement = document.getElementById("text");
-
-
-//     img.src = "";
-//     errorText.textContent = "";
-//     textElement.textContent = "";
-
-//     const file = event.target.files[0];
-//     const maxSize = 1024 * 1024 * 2;
-//     const imageTypes = ["image/jpeg", "image/png"];
-
-//     if (!file) return;
-
-//     if (file.size > maxSize) {
-//         errorText.textContent = "The file is too big";
-//         return;
-//     }
-    
-//     if (!imageTypes.includes(file.type)) {
-//         alert("Please upload a JPG or PNG image");
-//         return;
-//     }
-    
-//     const reader = new FileReader();
-//     reader.onload = (e) => {
-//         img.src = e.target.result;
-//     };
-
-//     reader.readAsDataURL(file);
-// });
-
-// document.getElementById("file_input").addEventListener("change", (event) => {
-//     const textElement = document.getElementById("text");
-//     const img = document.getElementById("preview");
-//     const errorText = document.getElementById("error");
-
-
-//     textElement.textContent = "";
-//     img.src = "";
-//     errorText.textContent = "";
-
-//     const file = event.target.files[0];
-//     if (!file) {
-//         alert("Please upload a text file");
-//         return;
-//     }
-
-//     const reader = new FileReader();
-//     reader.onload = (e) => {
-//         textElement.textContent = e.target.result;
-//     };
-
-//     reader.readAsText(file);
-// });
-
-
-
-
