@@ -51,7 +51,7 @@ body {
     width: 700px;
     gap: 30px;
     flex-wrap: wrap;
-    margin-top: 20px;
+    margin-top: 100px;
 }
 
 .hole {
@@ -67,7 +67,6 @@ body {
 .start_timer {
     display: flex;
     flex-direction: row;
-    margin-top: 100px;
     justify-content: center;
     gap: 100px
 }
